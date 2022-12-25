@@ -1,1 +1,1 @@
-Pointer and array
+Pointer and array in C
