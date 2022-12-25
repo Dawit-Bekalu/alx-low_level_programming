@@ -1,1 +1,1 @@
-my Nested Loop and Functions
+function in C
