@@ -10,5 +10,10 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 int _putchar(char c);
 int _atoi(const char *s);
 void print_int(unsigned long int n);
+char *mul(char n, char *num, int num_index, char *dest, int dest_index);
+int check_for_digits(char **av);
+void init(char *str, int l);
+#include <stdio.h>
+#include <stdlib.h>
 
 #endif
