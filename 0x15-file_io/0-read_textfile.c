@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * read_textfile - reads a text file and prints the letters
  * @filename: filename.
@@ -22,15 +21,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	buf = malloc(sizeof(char) * (letters));
+
 	if (!buf)
 		return (0);
 
 	s = read(fd, buf, letters);
+
 	t = write(STDOUT_FILENO, buf, s);
 
 	close(fd);
 
 	free(buf);
-
+	
 	return (t);
 }
